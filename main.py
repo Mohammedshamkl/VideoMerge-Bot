@@ -433,7 +433,7 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
         if (QueueDB.get(cb.from_user.id, None) is None) or (QueueDB.get(cb.from_user.id) == []):
             await cb.answer("Sorry Unkil, Your Queue is Empty!", show_alert=True)
             return
-        merged_vid_path = f"{Config.DOWN_PATH}/{str(cb.from_user.id)}/[@Im_k8ng]_Ripped_Taarak_Mehta_Ka_Ooltah _Chashmah_SonyLIV_Tv_show.{FormtDB.get(cb.from_user.id).lower()}"
+        merged_vid_path = f"{Config.DOWN_PATH}/{str(cb.from_user.id)}/[@Im_k8ng]_Ripped_Taarak_Ka_Ooltah_Chasmah_Sonyliv.{FormtDB.get(cb.from_user.id).lower()}"
         if cb.data.split("_", 1)[-1] == "Yes":
             await cb.message.edit("Okay Unkil,\nSend me new file name!")
             try:
